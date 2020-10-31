@@ -1,0 +1,167 @@
+############### John or Mary Calling given Alarm ###############
+earthquakeState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "E" : 0.23100870196890555,
+            "NE" : 0.7689912980310946
+        }
+    ],
+    "frozen" : false
+}
+burglaryState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "B" : 0.37355122828189946,
+            "NB" : 0.6264487717181005
+        }
+    ],
+    "frozen" : false
+}
+alarmState	A
+johnCallingState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "NJ" : 0.10000000000000017,
+            "J" : 0.8999999999999998
+        }
+    ],
+    "frozen" : false
+}
+maryCallingState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "NM" : 0.30000000000000016,
+            "M" : 0.6999999999999998
+        }
+    ],
+    "frozen" : false
+}
+############### John Calling without Alarm ###############
+earthquakeState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "E" : 0.0014222590323642345,
+            "NE" : 0.9985777409676357
+        }
+    ],
+    "frozen" : false
+}
+burglaryState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "B" : 6.013131697156937e-05,
+            "NB" : 0.9999398686830284
+        }
+    ],
+    "frozen" : false
+}
+alarmState	NA
+johnCallingState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "NJ" : 0.9499999999999997,
+            "J" : 0.050000000000000204
+        }
+    ],
+    "frozen" : false
+}
+maryCallingState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "NM" : 0.9899999999999999,
+            "M" : 0.010000000000000222
+        }
+    ],
+    "frozen" : false
+}
+############### Mary Calling after an Earthquake ###############
+earthquakeState	E
+burglaryState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "B" : 0.0010000000000004432,
+            "NB" : 0.9989999999999996
+        }
+    ],
+    "frozen" : false
+}
+alarmState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "A" : 0.2906600000000004,
+            "NA" : 0.7093399999999995
+        }
+    ],
+    "frozen" : false
+}
+johnCallingState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "NJ" : 0.7029389999999995,
+            "J" : 0.29706100000000035
+        }
+    ],
+    "frozen" : false
+}
+maryCallingState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "NM" : 0.7894445999999997,
+            "M" : 0.21055540000000028
+        }
+    ],
+    "frozen" : false
+}
+############### Alarm goes off without Burglary or Earthquake and neither John nor Mary Calling ###############
+earthquakeState	NE
+burglaryState	NB
+alarmState	{
+    "class" : "Distribution",
+    "dtype" : "str",
+    "name" : "DiscreteDistribution",
+    "parameters" : [
+        {
+            "A" : 3.192883700815794e-05,
+            "NA" : 0.9999680711629918
+        }
+    ],
+    "frozen" : false
+}
+johnCallingState	NJ
+maryCallingState	NM
